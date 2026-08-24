@@ -1,0 +1,41 @@
+{
+  "name": "genpark-multichannel-conversational-commerce-social-helpdesk-skill",
+  "version": "1.0.0",
+  "description": "GenPark AI Agent Skill - Multichannel conversational commerce helpdesk and AI social selling agent generating instant in-chat checkout links across WhatsApp, Instagram, and TikTok.",
+  "author": "genpark",
+  "category": "crm",
+  "tags": [
+    "conversational-commerce",
+    "social-helpdesk",
+    "in-chat-checkout",
+    "whatsapp-commerce",
+    "myalice"
+  ],
+  "inputs": {
+    "conversation_channel": {
+      "type": "string"
+    },
+    "customer_handle": {
+      "type": "string"
+    },
+    "message_text": {
+      "type": "string"
+    }
+  },
+  "outputs": {
+    "ticket_id": {
+      "type": "string"
+    },
+    "intent_detected": {
+      "type": "string"
+    },
+    "auto_generated_checkout_link": {
+      "type": "string"
+    },
+    "ai_assisted_first_response_time_seconds": {
+      "type": "number"
+    }
+  },
+  "entrypoint": "client.py",
+  "example": "example_usage.py"
+}
